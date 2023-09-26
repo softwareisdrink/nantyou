@@ -1,5 +1,5 @@
-大丈夫そうだね
-こっちと向こうをつなｇます
-こんにちは
+// 大丈夫そうだね
+// こっちと向こうをつなｇます
+// こんにちは
 
-ohakonbann kurohina
+// ohakonbann kurohina
