@@ -1,7 +1,12 @@
-//大丈夫そうだね
-//こっちと向こうをつなｇます
-//こんにちは武田
-//hayamamo
-//ohakonbann kurohina
-//mackenyou
-//ikemsita hiyori
+const express = require('express');
+const app = express();
+const http = require('http').createServer(app);
+
+app.use(express.static('public'));
+
+app.get('/', (req, res) => {
+});
+
+http.listen(3000, () => {
+  console.log("listening on *:3000");
+});
