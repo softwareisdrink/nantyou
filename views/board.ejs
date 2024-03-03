@@ -1,0 +1,58 @@
+<!--悩み相談掲示板の悩みリストのボード-->
+
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>スレッド名　</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+ <header>
+   <h1 class="suretitle">クラスの人間関係</h1> 
+ </header> 
+ 
+  <body>
+   
+    <h2 id="name">投稿者：山口</h2><h3 id="postTime">2002年12月12日</h3>
+    <p>クラスで仲のいい友達がいますが、耳が聞こえなくてを理由に話についていけず、孤独感を感じてしまいます。皆さんの意見を聞かせてください。</p>
+
+    <% for (let row of results){ %>
+      <h2><%- row.username %></h2>
+      <p><%- row.timestamp %></p>
+      <p><%- row.text %></p>
+    <% } %>
+  <form action="/reply" method="post">
+    <label>お名前<input type="text" name="username" ></label>
+    <label>返信内容<input type="text" name="text"></label>
+    
+    <input type="submit" value="送信" id="button">
+  </form>
+    <!-- 
+    <h2>武田</h2>
+    <p>それはどうしようもないことだと割り切って過ごしてみては？</p>
+    
+    <h2>吉岡</h2>
+    <p>あなたがその友達の孤独感を埋める光になりましょう。</p>
+    
+    <h2>山田</h2>
+    <p>友達に勇気を出してゆっくり話してほしいとか紙に書いてほしいとか言ったほうがいいと思います。
+私もそうやって解決しました。</p>
+    
+    <h2>石濱</h2>
+    <p>確かに、私もバイトをしていますが聴者の話にあまりついていけていません。
+今回、友達ということですから、勇気を出して言ってみるのはいかがでしょうか。
+参考になりそうなものを置いていきます。https://www.nhk.or.jp/heart-net/article/811/</p>
+
+    -->
+    
+
+      
+      
+
+<a href="/">戻る</a>
+
+
+
+    
+  </body>
+</html>
